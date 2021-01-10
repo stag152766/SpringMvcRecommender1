@@ -3,6 +3,7 @@ package ru.eprocurement.recommender.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.eprocurement.recommender.dao.PurchaseDAO;
 
@@ -21,5 +22,11 @@ public class PurchaseController {
     public String index(Model model){
         model.addAttribute("purchases", purchaseDAO.index());
         return "purchases/index";
+    }
+
+    @GetMapping("/{id}")
+    public String show(@PathVariable("id") int id, Model model){
+        model.addAttribute("purchase", purchaseDAO.show(id));
+        return "purchases/show";
     }
 }

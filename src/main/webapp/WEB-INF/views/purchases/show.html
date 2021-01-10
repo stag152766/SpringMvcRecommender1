@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchase</title>
+</head>
+<body>
+
+<p th:text="${purchase.getId()}">VALUE</p>
+<div th:each="product : ${purchase.getProducts()}">
+    <a th:text="'Product ID: ' + ${product.getId()}">VALUE</a>
+    <br/>
+    <a th:text="'Name: ' + ${product.getName()}">VALUE</a>
+    <br/>
+    <a th:text="'OKPD: ' + ${product.getCodeOkpd()}">VALUE</a>
+    <br/>
+    <a th:text="'Total cost: ' + ${product.getSum()}">VALUE</a>
+</div>
+
+
+
+
+</body>
+</html>

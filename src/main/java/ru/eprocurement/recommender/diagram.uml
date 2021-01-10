@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="172.0">ru.eprocurement.recommender.models.Purchase</node>
+    <node x="17.5" y="0.0">ru.eprocurement.recommender.models.Product</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.eprocurement.recommender.models.Purchase" target="ru.eprocurement.recommender.models.Product">
+      <point x="43.75" y="-39.0" />
+      <point x="131.25" y="147.0" />
+      <point x="122.5" y="147.0" />
+      <point x="35.0" y="61.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="524.5" y="125.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
